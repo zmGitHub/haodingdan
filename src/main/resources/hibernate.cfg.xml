@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "classpath://org/hibernate/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+        <!--数据库连接设置-->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/haodingdan</property>
+        <property name="connection.username">haodingdan</property>
+        <property name="connection.password">haodingdan</property>
+        <property name="hbm2ddl.auto">update</property>
+
+        <property name="connection.provider_class">org.hibernate.c3p0.internal.C3P0ConnectionProvider</property>
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">30</property>
+        <property name="hibernate.c3p0.time_out">1800</property>
+        <property name="hibernate.c3p0.max_statement">50</property>
+        <property name="hibernate.show_sql">true</property>
+
+        <!--实体注册-->
+        <mapping class="com.haodingdan.bean.User"></mapping>
+        <mapping class="com.haodingdan.bean.Recruit"></mapping>
+        <mapping class="com.haodingdan.bean.UnitsCatagory"></mapping>
+        <mapping class="com.haodingdan.bean.Job"></mapping>
+        <mapping class="com.haodingdan.bean.JobArticle"></mapping>
+
+    </session-factory>
+</hibernate-configuration>

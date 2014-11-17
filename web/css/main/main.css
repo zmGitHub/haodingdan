@@ -1,0 +1,545 @@
+.btn-tae-info {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #428bca;
+}
+.navbar-blue {
+    background-color: #428bca;
+}
+
+.badge-square {
+    height: 26px;
+    display: inline-block;
+    padding: 0 6px;
+    border: 1px solid #f2f2f2;
+    line-height: 26px;
+    margin-right: 3px;
+    background: #fff;
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar-info {
+    background-color: #303a40;
+    color: #ffffff!important;
+}
+
+.navbar-info>a {
+    color: #ffffff!important;
+}
+
+.gray {
+    background: #f6f6f6;
+    color: #999;
+}
+
+#order-nav a {
+    color: #ffffff;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+.order-active {
+    background-color: #216098;
+}
+
+.more {
+    color: #7bb86b;
+}
+
+.tae-table-head {
+    background-color: rgba(204,204,204,.4);
+    border-color: #216098;
+}
+
+
+.tae-table-tr {
+    padding: 7px 15px;
+    margin: 10px 0;
+}
+
+.tr-green {
+    background-color: rgba(115, 198, 76,.4);
+    border-left: 7px solid rgb(115, 198, 76);
+}
+.tr-orange {
+    background-color: rgba(248, 157, 63, 0.40);
+    border-left: 7px solid rgb(248, 157, 63);
+}
+
+.user-guide {
+    border-top: 1px solid #cccccc;
+}
+
+.user-guide ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-guide ul li {
+    margin: 10px 0;
+}
+
+.user-guide ul li a {
+    text-decoration: none;
+    color: #080808;
+    margin-left: 10px;
+}
+
+.user-guide ul li a:hover {
+    color: #216098;
+}
+
+.tae-breadcust {
+    width: 100%;
+    height: 100px;
+    background-image: url("../../images/breadkoast.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.text-white {
+    color: #ffffff!important;
+}
+.text-orange {
+    color: #fa0!important;
+}
+
+.text-blue {
+    color: #3d9ccc!important;
+}
+.text-head {
+    line-height: 20px;
+    border-left: 3px solid #3d9ccc;
+    padding-left: 7px;
+}
+
+.job-controller span {
+    margin-right: 10px;
+    line-height: 60px;
+}
+
+.text-gray {
+    color: #999!important;
+}
+
+.join-job {
+    position: relative;
+    width: 100%;
+
+}
+
+.join-job p,button {
+    margin-bottom: 0;
+    line-height: 60px;
+}
+
+.tae-area {
+    position: relative;
+    width: 40%;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 5px 5px;
+    border: 1px solid #216098;
+    margin: 3px;
+}
+
+.tae-small {
+    color: #262626;
+}
+
+.tae-city button {
+    margin: 5px;
+}
+
+.panel-content {
+    padding: 10px;
+    margin-top: 25px;
+    border-top: 1px solid #cccccc;
+}
+
+.tae-identify {
+    background-image: url("../../images/bg.png");
+}
+
+.tae-tag {
+    height: 110px;
+    background-color: #729598;
+    background-image: url("../../images/tag.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.text-think {
+    padding: 0;
+    margin: 0;
+}
+/*登陆框的样式*/
+.login-form {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 300px;
+    height: 300px;
+    z-index: 9999;
+}
+.login-tip {
+    width: 100%;
+    padding: 5px 15px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    background-color: rgba(0,0,0,.6);
+}
+
+.login-box {
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    background-color: rgba(0,0,0,.6);
+}
+
+.job-form {
+    position: absolute;
+    top: 8%;
+    right: 5%;
+    width: 300px;
+    height: 320px;
+    z-index: 9999;
+}
+
+.job-box {
+    width: 100%;
+    height: 320px;
+    padding: 10px;
+    background-color: rgba(0,0,0,.7);
+}
+
+.login-footer {
+    width: 100%;
+    margin-top: -60px;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.host-link a {
+    margin-right: 15px;
+    float: left;
+    color: #666;
+    text-decoration: none;
+    line-height: 34px;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+}
+
+.host-link a:hover {
+    color: #fa0!important;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+.margin-top-20 {
+    margin-top: 20px;
+}
+.margin-top-30 {
+    margin-top: 30px;
+}
+.margin-top-40 {
+    margin-top: 40px;
+}
+
+.job-title a {
+    font-size: 18px;
+    color: #222222;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+}
+
+.job-title a:hover {
+    color: #fa0!important;
+}
+
+.job-list{
+    margin: 8px 0 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.job-position-list {
+    padding: 0;
+    margin: 0;
+}
+.job-position-list li {
+    padding: 8px 0;
+    font-size: 12px;
+    line-height: 14px;
+    list-style: none;
+}
+
+.job-position-list li b {
+    float: left;
+    max-width: 36px;
+    margin-right: 10px;
+    font-weight: 400;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.job-position-list li span {
+    float: left;
+    max-width: 160px;
+    margin-right: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.job-position-list li span a {
+    text-decoration: none;
+    color: #666;
+}
+.job-position-list li span a:hover {
+    color: #fa0!important;
+}
+
+.job-position-list li i {
+    float: right;
+    max-width: 64px;
+    text-align: right;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.job-list .company-name {
+    padding-right: 15px;
+    border-right: 1px solid #999;
+    margin-right: 12px;
+    color: #d99816;
+    text-decoration: none;
+}
+
+.job-list a {
+    margin-right: 10px;
+    color: #666666;
+    text-decoration: none;
+}
+
+.job-list a:hover {
+    color: #fa0!important;
+}
+
+.panel-tie {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #3d9ccc;
+    left: -15px;
+    top: 10px;
+}
+
+.panel-tie h3 {
+    position: relative;
+    float: left;
+    width: 40%;
+    left: 15px;
+    color: #ffffff;
+}
+
+.panel-tie h5 {
+    position: relative;
+    float: left;
+    width: 100%;
+    left: 15px;
+    color: #ffffff;
+}
+
+.job-rate {
+    position: relative;
+    float: right;
+    width: 60%;
+}
+
+.job-rate ul {
+    margin: 15px;
+    list-style: none;
+    color: #ffffff;
+}
+
+.job-rate ul li {
+    position: relative;
+    float: right;
+    text-align: center;
+    margin-right: 5px;
+    padding: 0 15px;
+}
+
+.job-rate ul li:last-child {
+    border-right: solid 1px #ffffff;
+}
+
+.job-rate ul li span {
+    display: block;
+    font-size: 18px;
+
+}
+
+.title-triangle {
+    display: inline-block;
+    width: 15px;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    display: block;
+    border-bottom: 8px solid transparent;
+    border-right: 15px solid #156e9b;
+}
+.company-job a {
+    margin: 8px 0 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #0f6b99;
+    text-decoration: none;
+}
+
+.company-job a:hover {
+    color: #fa0!important;
+}
+
+.hotIndustry {
+    margin: 0 0 20px;
+    height: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #999;
+    font-size: 22px;
+    border-left: 4px solid #fa9900;
+    padding-left: 9px;
+}
+
+.first {
+    border-right: solid 1px #cccccc;
+}
+
+.login-footer button:first-child {
+    margin-right: 20px;
+}
+
+.login-interface {
+    position: relative;
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.login-interface ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.login-interface ul li {
+    margin-bottom: 15px;
+    color: #428bca;
+}
+
+.login-interface ul li em {
+    margin-left: 20px;
+    color: #cccccc;
+}
+
+.btn-tae {
+    display: inline-block;
+    padding: 8px 30px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.ft-title {
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.news::after {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 40px;
+    height: 25px;
+    content: "";
+    background-image: url("../../images/new_home.png");
+    background-position: 282px 26px;
+}
+.cloth-mark::after {
+    position: absolute;
+    top: -18px;
+    right: 0;
+    width: 100px;
+    height: 30px;
+    content: "";
+    background-image: url("../../images/new_home.png");
+    background-position: -252px -205px;
+}
+
+#order-nav a:hover {
+    background-color: #216098;
+}
+
+.text-search-tip {
+    line-height: 110px;
+}
+.text-search-tip:hover {
+    color: #f85831;
+}
+
+/*导航栏上的分类服装*/
+.nav-type-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-type-list li{
+    position: relative;
+    float: left;
+    margin: 10px 5px;
+}
+.nav-type-list li:first-child {
+    margin-left: 0;
+}
+.nav-type-list li a{
+    color: #7f8c8d;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.nav-type-list li a:hover{
+    color: #f85831;
+}

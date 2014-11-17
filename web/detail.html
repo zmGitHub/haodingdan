@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>好订单</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main/main.css">
+    <!--Font-Awesome-->
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!--登陆框-->
+<div class="modal fade" id="login-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <h2>好订单登陆</h2>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">取 消</button>
+                <button type="button" class="btn btn-success">登 陆 asdfasdf</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--最顶端的导航栏-->
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">好订单首页</a>
+        </div>
+        <div id="top-navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">会员服务<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">买家服务</a></li>
+                        <li><a href="#">供应商服务</a></li>
+                        <li><a href="#">认证服务</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">帮助中心<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">新手入门</a></li>
+                        <li><a href="#">我要流言</a></li>
+                        <li><a href="#">在线客服</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+                <li><a href="#">简历中心</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-tie">
+                    <h3>网络营销总监</h3>
+                    <div class="job-rate">
+                        <ul>
+                            <li><span>100%</span><small>查看率</small></li>
+                            <li><span>100%</span><small>反馈率</small></li>
+                        </ul>
+                    </div>
+                    <h5>某电子商务公司</h5>
+                    <span class="title-triangle"></span>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1 class="text-orange">
+                                30-50万
+                            </h1>
+                            <p class="lead">招聘企业：某电子商务公司</p>
+                            <p>
+                                <span><i class="fa fa-map-marker text-orange"></i> 广州 </span>
+                                <span><i class="fa fa-paper-plane-o text-danger"></i> 本科或以上 </span>
+                                <span><i class="fa fa-clock-o text-success"></i> 5年以上 </span>
+                            </p>
+                            <p class="small">发布时间：47分钟前</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-center join-job">
+                                <p class="led jon">
+                                    <span><i class="fa fa-star text-success"></i> 收藏 </span>
+                                    <span><i class="fa fa-stop text-danger"></i> 举报 </span>
+                                </p>
+                                <button type="button" class="btn btn-lg btn-warning"> 投递简历 </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-header"></div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-head lead">
+                                基本信息：
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                <small>汇报对象</small> : 总经理
+                            </p>
+                            <p>
+                                <small>所属行业</small> : 互联网/移动互联网/电子商...
+                            </p>
+                            <p>
+                                <small>企业性质</small> : 中外合营(合资·合作)
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                <small>下属人数</small> : 总经理
+                            </p>
+                            <p>
+                                <small>所属部门</small> : 互联网/移动互联网/电子商...
+                            </p>
+                            <p>
+                                <small>企业规模</small> : 中外合营(合资·合作)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="page-header"></div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-head lead">
+                                岗位职责：
+                            </p>
+                        </div>
+                        <div class="col-md-12">
+                            <p>
+                                1、负责公司互联网产品包装、市场营销策划、推进和执行；
+                            </p>
+                            <p>
+                                2、负责推动网站的用户转化、营销活动的策划和执行；
+                            </p>
+                            <p>
+                                3、积极收集、总结、分析产品营销过程中的市场信息；
+                            </p>
+                            <p>
+                                4、营销方案撰写，并推动相关部门落实执行。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="page-header"></div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-head lead">
+                                岗位要求：
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                <small>学历要求</small> : 本科或以上
+                            </p>
+                            <p>
+                                <small>语言要求</small> : 普通话
+                            </p>
+                            <p>
+                                <small>年龄要求</small> : 25-45
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                <small>性别要求</small> : 不限
+                            </p>
+                            <p>
+                                <small>专业要求</small> : 不限
+                            </p>
+                            <p>
+                                <small>工作年限</small> : 5年以上
+                            </p>
+                        </div>
+                    </div>
+                    <div class="page-header"></div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-head lead">
+                                任职资格的具体描述：
+                            </p>
+                        </div>
+                        <div class="col-md-12">
+                            <p>
+                                1、本科以上学历，金融、市场、电商、广告相关专业；丰富的互联网行业背景；
+                            </p>
+                            <p>
+                                2、具有独立策划和设计互联网营销方案的经验，并能推动完成；
+                            </p>
+                            <p>
+                                3、熟悉互联网领域的营销资源、协作渠道和操作经验，具备优秀的运营分析、平台日常维护协调能力；
+                            </p>
+                            <p>
+                                4、营销方案撰写，并推动相关部门落实执行。
+                            </p>
+                            <p>
+                                5、具有优秀的沟通能力，团队意识与执行能力；
+                            </p>
+                            <p>
+                                6、良好的媒体、渠道等人际关系网络；
+                            </p>
+                            <p>
+                                7、有知名互联网、金融类公司相关工作经验者优先。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="page-header"></div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-head lead">
+                                薪酬福利：
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                <small>职位年薪</small> : 本科或以上
+                            </p>
+                            <p>
+                                <small>年假福利</small> : 普通话
+                            </p>
+                            <p>
+                                <small>通讯交通</small> : 25-45
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                <small>薪资构成</small> : 基本薪资 + 奖金/提成
+                            </p>
+                            <p>
+                                <small>社保福利</small> : 国家标准
+                            </p>
+                        </div>
+                    </div>
+                    <div class="page-header"></div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-head lead">
+                                补充说明：
+                            </p>
+                        </div>
+                        <div class="col-md-12">
+                            <p>
+                                暂无。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="page-header"></div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-head lead">
+                                企业介绍：
+                            </p>
+                        </div>
+                        <div class="col-md-12">
+                            <p>
+                                现公司规模500多人，是一家上市集团公司的旗下子公司，专注于保险交易平台
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-md-1">
+                            <span class="text-center" style="line-height: 60px;">
+                                <i class="fa fa-cc-discover fa-2x"></i>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                你已有可投递的在线简历：中文简历_2014111
+                            </p>
+                            <p>
+                                <small>简历更新于2014-11-17 14:17</small>
+                            </p>
+                        </div>
+                        <div class="col-md-5 job-controller text-center">
+                            <span class="text-blue"><i class="fa fa-file-text-o"></i> 预览</span>
+                            <span class="text-blue"><i class="fa fa-edit"></i> 预览</span>
+                            <span class="text-blue"><i class="fa fa-recycle"></i> 预览</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-head lead">
+                                可能感兴趣的职位：
+                            </p>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="list-group">
+
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading text-blue">运营总监</h4>
+                                    <p class="list-group-item-text">某电子商务公司 | 广州
+                                        <span class="lead text-orange pull-right"><small class="text-gray">年薪 </small>30万 - 60万</span>
+                                    </p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading text-blue">运营总监</h4>
+                                    <p class="list-group-item-text">某电子商务公司 | 广州
+                                        <span class="lead text-orange pull-right"><small class="text-gray">年薪 </small>30万 - 60万</span>
+                                    </p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading text-blue">运营总监</h4>
+                                    <p class="list-group-item-text">某电子商务公司 | 广州
+                                        <span class="lead text-orange pull-right"><small class="text-gray">年薪 </small>30万 - 60万</span>
+                                    </p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading text-blue">运营总监</h4>
+                                    <p class="list-group-item-text">某电子商务公司 | 广州
+                                        <span class="lead text-orange pull-right"><small class="text-gray">年薪 </small>30万 - 60万</span>
+                                    </p>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-head lead">
+                                职位发布者
+                            </p>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="media">
+                                <a class="media-left" href="#">
+                                    <img src="images/qy.png" style="width: 150px; height: 100px;" alt="...">
+                                </a>
+                                <div class="media-body">
+                                    <p class="media-heading lead"><small>仅对会员开放</small></p>
+                                    <p><small>LD : LT13771653</small></p>
+                                    <p>擅长行业：IT/互联网</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="page-header" style="margin: 10px 0;"></div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                猎头等级 <span>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </span>
+                            </p>
+                            <p>
+                                服务好评率： <span class="text-danger">93.33 %</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-head lead">
+                                订阅高薪职位
+                            </p>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="请输入你的常用邮箱...">
+                            </div>
+                            <div class="form-group pull-right">
+                                <button class="btn btn-success"> 搜 索 </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    广告位
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- jQuery -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- bootstrap.js -->
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fac45a0f68a119fbe4d1c4c3ac3044dbd' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+</html>
