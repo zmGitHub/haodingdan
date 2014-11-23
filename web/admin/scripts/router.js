@@ -41,7 +41,7 @@ angular.module('adminApp').config(function ($stateProvider, $urlRouterProvider) 
     templateUrl: 'views/users/consumer.html',
     resolve:{
       userList:['users', function (users) {
-        users.getAllUsers().then(function (result) {
+        return users.getAllUsers().then(function (result) {
           return result;
         });
       }]

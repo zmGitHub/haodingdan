@@ -7,19 +7,15 @@
       </h5>
     </div>
     <div class="widget-body">
-      <div class="table-responsive">
+      <div ng-hide="!vm.users.length">
         <div class="well no-margin padding-10">
           <div class="row">
             <div class="col-sm-6">
               <div>
                 <label>
                   展示
-                  <select size="1">
-                    <option value="10" selected="selected">10</option>
-                    <option value="25">25</option>
-                    <option value="50">50</option>
-                    <option value="100">100</option>
-                  </select>
+                  <select ng-model="vm.page.size" title="每页条数"
+                          ng-options="pageSize for pageSize in [10, 20, 50]"></select>
                   个用户
                 </label>
               </div>
@@ -28,8 +24,8 @@
               <div>
                 <label class="pull-right">搜 索:
                 <span class="input-icon input-icon-right">
-												<input type="text">
-												<i class="icon-search blue"></i>
+                  <input type="text" ng-model="vm.filter.$">
+                  <i class="icon-search blue"></i>
                 </span>
                 </label>
               </div>
@@ -45,22 +41,32 @@
                 <span class="lbl"></span>
               </label>
             </th>
-            <th>Domain</th>
-            <th>Price</th>
-            <th class="hidden-480">Clicks</th>
+            <th class="hidden-480">
+              <i class="icon-list bigger-110 hidden-480"></i>
+              编 号
+            </th>
+            <th class="hidden-480">
+              <i class="icon-user bigger-110 hidden-480"></i>
+              名 称
+            </th>
 
             <th>
-              <i class="icon-time bigger-110 hidden-480"></i>
-              Update
+              <i class="icon-envelope-alt bigger-110 hidden-480"></i>
+              邮 箱
             </th>
-            <th class="hidden-480">Status</th>
-
-            <th></th>
+            <th class="hidden-480">
+              <i class="fa fa-tel hidden-480"></i>
+              手 机
+            </th>
+            <th class="hidden-480">
+              <i class="icon-cogs bigger-110 hidden-480"></i>
+              操 作
+            </th>
           </tr>
           </thead>
 
           <tbody>
-          <tr ng-repeat="user in vm.users">
+          <tr ng-repeat="user in vm.users|filter:vm.filter|paging:vm.page.index:vm.page.size">
             <td class="center">
               <label>
                 <input type="checkbox" class="ace" />
@@ -68,9 +74,6 @@
               </label>
             </td>
 
-            <td>
-              <a href="#">app.com</a>
-            </td>
             <td>{{$index+1}}</td>
             <td>{{user.name}}</td>
 
@@ -92,26 +95,52 @@
                   <i class="icon-pencil bigger-130"></i>
                 </a>
 
-                <a class="red" href="#">
+                <a class="red" ng-click="vm.del($index, user.id)">
                   <i class="icon-trash bigger-130"></i>
                 </a>
               </div>
 
             </td>
           </tr>
-
-
           </tbody>
         </table>
         <div class="well no-margin">
           <div class="row">
             <div class="col-md-6">
-              <span>显示 1 到 30 个用户 当前第1 页</span>
+              <small>显示 <strong>{{vm.page.index}}</strong> 到 <strong>{{numPages}} </strong> 页 <em>总共{{vm.users.length}}个用户</em></small>
             </div>
-            <div class="col-md-6"></div>
+            <div class="col-md-6">
+              <pagination total-items="vm.users|filter:vm.filter|size"
+                          ng-model="vm.page.index"
+                          max-size="5"
+                          items-per-page="vm.page.size"
+                          class="pagination-sm pull-right no-margin"
+                          num-pages="numPages"
+                          first-text="首页"
+                          last-text="尾页"
+                          previous-text="上一页"
+                          next-text="下一页"
+                          boundary-links="true">
+              </pagination>
+            </div>
 
           </div>
         </div>
+      </div>
+      <div class="padding-10" ng-show="!vm.users.length">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="alert alert-success">
+              <button type="button" class="close">
+                <i class="icon-remove"></i>
+              </button>
+
+              <i class="icon-umbrella bigger-120 blue"></i>
+              亲!现在还没有数据哦.....
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

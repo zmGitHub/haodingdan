@@ -10,11 +10,7 @@
  */
 angular.module('adminApp', [
     'ngAnimate',
-    'ngCookies',
     'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch',
     'ui.router',
     'ui.bootstrap'
   ]);
