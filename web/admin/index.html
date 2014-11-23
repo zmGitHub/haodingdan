@@ -1,0 +1,146 @@
+<!doctype html>
+<html class="no-js" ng-app="adminApp">
+  <head>
+    <meta charset="utf-8">
+    <title>微服装网后台管理系统</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/ace-fonts.css" />
+    <link rel="stylesheet" href="assets/css/ace.min.css" />
+    <link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+    <link rel="stylesheet" href="styles/animate.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+
+  </head>
+  <body>
+    <app-header></app-header>
+    <div class="main-container" id="main-container">
+      <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+      </script>
+
+      <div class="main-container-inner">
+        <a class="menu-toggler" id="menu-toggler" href="#">
+          <span class="menu-text"></span>
+        </a>
+        <!--导航栏-->
+        <nav-bar></nav-bar>
+        <!--/.导航栏-->
+        <!-- 面板操控区 -->
+        <div class="main-content">
+          <!--面包屑-->
+          <app-breadcrumbs></app-breadcrumbs>
+          <!--面包屑-->
+          <div class="page-content" ui-view>数据加载中...</div>
+        </div>
+        <!-- /.面板操控区 -->
+        <div class="ace-settings-container" id="ace-settings-container">
+          <div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
+            <i class="icon-cog bigger-150"></i>
+          </div>
+          <div class="ace-settings-box" id="ace-settings-box">
+            <div>
+              <div class="pull-left">
+                <select id="skin-colorpicker" class="hide">
+                  <option data-skin="default" value="#438EB9">#438EB9</option>
+                  <option data-skin="skin-1" value="#222A2D">#222A2D</option>
+                  <option data-skin="skin-2" value="#C6487E">#C6487E</option>
+                  <option data-skin="skin-3" value="#D0D0D0">#D0D0D0</option>
+                </select>
+              </div>
+              <span>&nbsp; 换 肤</span>
+            </div>
+
+
+            <div>
+              <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-rtl" />
+              <label class="lbl" for="ace-settings-rtl">&nbsp; 右对齐</label>
+            </div>
+
+            <div>
+              <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-add-container" />
+              <label class="lbl" for="ace-settings-add-container">
+                &nbsp; 窄 屏
+              </label>
+            </div>
+          </div>
+        </div><!-- /#ace-settings-container -->
+      </div><!-- /.main-container-inner -->
+
+      <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+        <i class="icon-double-angle-up icon-only bigger-110"></i>
+      </a>
+    </div><!-- /.main-container 控制面板 -->
+    <!--[if lt IE 9]>
+    <script src="assets/angular/es5-sham.js"></script>
+    <script src="assets/angular/json3.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="assets/angular/angular.js"></script>
+    <script src="assets/angular/json3.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="assets/angular/angular-resource.js"></script>
+    <script src="assets/angular/angular-sanitize.js"></script>
+    <script src="assets/angular/angular-animate.js"></script>
+    <script src="assets/angular/angular-ui-router.js"></script>
+    <script src="assets/angular/ui-bootstrap-tpls.js"></script>
+    <script src="assets/angular/underscore.js"></script>
+
+    <!--plugins-->
+    <script src="assets/js/ace-extra.min.js"></script>
+    <script src="assets/js/typeahead-bs2.min.js"></script>
+    <script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+    <script src="assets/js/jquery.easy-pie-chart.min.js"></script>
+    <script src="assets/js/jquery.sparkline.min.js"></script>
+    <script src="assets/js/flot/jquery.flot.min.js"></script>
+    <script src="assets/js/flot/jquery.flot.pie.min.js"></script>
+    <script src="assets/js/flot/jquery.flot.resize.min.js"></script>
+    <script src="assets/js/ace-elements.min.js"></script>
+    <script src="assets/js/ace.js"></script>
+    <!-- endbowerbower_components/ -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <!--eazyAjax-->
+        <script src="../eazyajax/core.js"></script>
+        <!--eazyAjax-->
+        <!--service-->
+        <script src="scripts/service/users.js"></script>
+        <!--service-->
+        <!--config-->
+        <script src="scripts/config/nav-data.js"></script>
+        <!--config-->
+
+        <!--router-->
+        <script src="scripts/router.js"></script>
+        <!--router-->
+
+        <!--directives-->
+        <script src="scripts/directives/app/header.js"></script>
+        <script src="scripts/directives/app/nav.js"></script>
+        <script src="scripts/directives/app/breadcrumbs.js"></script>
+        <!--directives-->
+
+
+        <!--controller-->
+        <script src="scripts/controllers/home.js"></script>
+        <script src="scripts/controllers/home/index.js"></script>
+        <script src="scripts/controllers/home/profiles.js"></script>
+
+        <script src="scripts/controllers/users.js"></script>
+        <script src="scripts/controllers/users/consumer.js"></script>
+        <script src="scripts/controllers/users/enterprise.js"></script>
+        <!--controller-->
+
+        <!-- endbuild -->
+</body>
+</html>
