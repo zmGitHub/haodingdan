@@ -12,6 +12,21 @@ import java.util.List;
  */
 public class UserBiz {
 
+
+    /**
+     * 用户登录
+     * @param username
+     * @param password
+     * @return
+     */
+    public boolean login(String username,String password){
+        Session session=HibernateUtil.getSession();
+        Query query=session.createQuery("from  User user where user.name=:name and  user.password=:password");
+        query.setParameter("name",username);
+        query.setParameter("password",password);
+        return query.list().size()>0?true:false;
+    }
+
     /**
      * 添加一个用户
      * @param user
@@ -73,6 +88,20 @@ public class UserBiz {
     public User get(Integer id){
         Session session=HibernateUtil.getSession();
         return (User) session.get(User.class,id);
+    }
+    /**
+     * 根据id获取用户信息
+     * @param name
+     * @return
+     */
+    public User getByName(String  name){
+        Session session=HibernateUtil.getSession();
+        Query query=session.createQuery("from User user where user.name=:name");
+        query.setParameter("name",name);
+        if(query.list().size()>0){
+            return (User) query.list().get(0);
+        }else
+            return null;
     }
 
     /**
